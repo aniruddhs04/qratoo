@@ -27,7 +27,7 @@ module.exports = function (_, passport, User, Users, async) {
             router.get('/form9',this.form9);
             router.get('/privacy',this.privacy);
             router.get('/terms',this.terms);
-
+            router.get('/pricing',this.pricing);
 
             router.post('/login', User.LoginValidation, this.postLogin);
             router.post('/signup', User.SignUpValidation, this.postSignUp);
@@ -400,6 +400,9 @@ module.exports = function (_, passport, User, Users, async) {
         },
         terms: function(req,res){
             res.render('tnc');
+        },
+        pricing: function(req,res){
+            res.render('pricing');
         }
           
     }
