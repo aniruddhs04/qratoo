@@ -7,6 +7,7 @@ module.exports = function (formidable,Users, aws, async) {
     return {
         SetRouting: function (router) {
             router.get('/admin', this.adminPage);
+            router.get('/:name',this.error);
 
             router.post('/uploadFile',aws.Upload.any(), this.uploadFile);
             router.post('/admin',this.adminPostPage);
@@ -26,7 +27,8 @@ module.exports = function (formidable,Users, aws, async) {
                             $push: {
                                 files: {
                                     file: req.body.filename,
-                                    type: req.body.type
+                                    type: req.body.type,
+                                    date: req.body.date
                                 }
                             }
 
@@ -59,6 +61,9 @@ module.exports = function (formidable,Users, aws, async) {
             });
 
             form.parse(req);
+        },
+        error: function(req,res){
+            res.render('error')
         }
     }
 }

@@ -24,15 +24,40 @@ const userSchema = mongoose.Schema({
     company: {type:String, default: ''},
     files: [{
         file: { type: String, default: '' },
-        type: {type: Date,default: ''}
+        type: {type: String,default: ''},
+        date:{type: String,default: ''}
     }],
     diary: [{
         text: { type: String, default: ''},
-        date: {type: Date, default: ''}
+        date: {type: String, default: ''}
     }],
     cv: { type: String, format: Date ,default: '' },
     sop: { type: String, format: Date ,default: '' },
-    pe: { type: String, format: Date ,default: '' }
+    pe: { type: String, format: Date ,default: '' },
+    paymentCV: {type: String, default: '0'},
+    paymentSOP: {type: String, default: '0'},
+    paymentPE: {type: String, default: '0'},
+    phoneNumber: {type: String,default: ''},
+    EducationLevel : {type:String, default: ''},
+    ResidentialAddress: {type: String,default: ''},
+    Underdegree: {type: String,default: ''},
+    Understream: {type: String,default: ''},
+    Undercourses: {type: String,default: ''},
+    Postdegree: {type: String,default: ''},
+    Poststream: {type: String,default: ''},
+    Postcourses: {type: String,default: ''},
+    experienceEmployedProfessional: {type: String,default: ''},
+    venturesEmployement: {type: String, default: ''},
+    PursuitsDescription: {type: String, default: ''},
+    VenturesPursuing: { type: String, default: ''},
+    CommunityActivities: {type: String, default: ''},
+    communityService: {type:  String, default: ''},
+    communityDevelopment: {type: String, default: ''},
+    CVUtility: {type: String, default: ''},
+    FutureOptions: {type: String, default: ''},
+    Miscellaneous: {type: String, default: ''},
+    Corporation: {type:String, default: ''},
+    NewApplication: {type:String,default: ''}
 });
 
 userSchema.methods.encryptPassword = function (password) {

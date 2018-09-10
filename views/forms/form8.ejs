@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form" action="/form8" method="POST">
+					<span class="contact3-form-title">
+                            Future Career Plans / Goals
+                    </span>
+
+                    <input type="hidden" name="email" value="<%=email%>">
+
+
+					<div class="wrap-input3">
+                            <div>
+                                <select class="selection-2" name="CVUtility">
+                                    <option>What is the immediate utility of your CV?</option>
+                                    <option>Academic internship in an Indian University</option>
+                                    <option>Application for a project under an expert / faculty</option>
+                                    <option>Internship in a Corporate firm / Start-up</option>
+                                </select>
+                            </div>
+                            <span class="focus-input3"></span>
+                        </div>
+                    
+
+                        <div class="wrap-input3">
+                                <div>
+                                    <select class="selection-2" name="FutureOptions">
+                                        <option>Which of the following options are you considering in your future plan?</option>
+                                        <option>Higher studies and specialisation</option>
+                                        <option>Business or Managerial Studies</option>
+                                        <option>Building a start-up</option>
+                                        <option>Administrative Services</option>
+                                    </select>
+                                </div>
+                                <span class="focus-input3"></span>
+                            </div>
+                        
+                            <div class="wrap-input3 validate-input" data-validate="Required">
+                                    <input class="input3" type="text" name="Miscellaneous" placeholder="Miscellaneous details that you would like us to know, in order to further personalize your CV. ">
+                                    <span class="focus-input3"></span>
+                                </div>
+                                <div class="">
+                                        <button class="contact3-form-btn" type="submit">
+                                                <a href="/">Submit</a>
+                                        </button>
+                                    </div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>

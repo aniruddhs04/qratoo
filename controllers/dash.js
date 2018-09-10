@@ -11,6 +11,7 @@ module.exports = function(Users,async){
             router.get('/typography', this.typography);
             router.get('/upgrade', this.upgrade);
             router.get('/user', this.user);
+            router.get('/form1',this.form1);
             
         },
         profile: function(req,res){
@@ -43,6 +44,10 @@ module.exports = function(Users,async){
         logout: function(req,res){
             req.logout();
             res.redirect('/');
+        },
+        form1: function(req,res){
+            res.render('form1');
+            
         }
     }
 }

@@ -17,8 +17,8 @@ passport.deserializeUser((id, done) => {
 passport.use(new GoogleStrategy({
     clientID: secret.googleAuth.clientID,
     clientSecret: secret.googleAuth.clientSecret,
-    //callbackURL: 'http://localhost:3000/auth/google/callback',
-    callbackURL: 'http://shrouded-thicket-11033.herokuapp.com/auth/google/callback',    
+    callbackURL: 'http://localhost:3000/auth/google/callback',
+    //callbackURL: 'http://shrouded-thicket-11033.herokuapp.com/auth/google/callback',    
     passReqToCallback: true
 }, (req, accessToken, refreshToken, profile, done) => {
 

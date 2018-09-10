@@ -19,7 +19,21 @@
             <input type="text" name="type" placeholder="Document Type">
             <button class="btn btn-lg upload-btn" type="button">Upload File</button>
             <input type="file" name="upload" id ="upload-input" style = "display: none">
-            
+            <input type="hidden" class="form-control" name="date" id="theDate">
+
+            <script type="text/javascript">
+                var date = new Date();
+
+                var day = date.getDate();
+                var month = date.getMonth() + 1;
+                var year = date.getFullYear();
+
+                if (month < 10) month = "0" + month;
+                if (day < 10) day = "0" + day;
+
+                var today = year + "-" + month + "-" + day;
+                document.getElementById("theDate").value = today;    
+            </script>
             <!--             <input type="file" name="Upload" id ="upload-input">-->
             <button>Add Group</button>
         </form>

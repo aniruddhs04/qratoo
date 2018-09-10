@@ -15,8 +15,8 @@ const passport = require('passport');
 container.resolve(function (_, users , dash, admin) {
 
     mongoose.Promise = global.Promise;
-    //mongoose.connect('mongodb://localhost/Qrato');
-    mongoose.connect('mongodb://raj:vaibhav123@ds137600.mlab.com:37600/qrato');
+    mongoose.connect('mongodb://localhost/Qrato');
+    //mongoose.connect('mongodb://raj:vaibhav123@ds137600.mlab.com:37600/qrato');
 
     //mongodb://raj:vaibhav123@ds137600.mlab.com:37600/qrato
     const app = SetupExpress();
@@ -47,7 +47,6 @@ container.resolve(function (_, users , dash, admin) {
         app.set('view engine', 'ejs');
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({ extended: true }));
-        
         
         app.use(validator());
         

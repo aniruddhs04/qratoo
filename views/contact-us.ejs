@@ -75,19 +75,19 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse nav-collapse">
-                      <div class="collapse navbar-collapse nav-collapse">
-                          <div class="menu-container">
-                              <ul class="navbar-nav navbar-nav-right">
-                                  <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/">Home</a></li>
-                                  <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about">About</a></li>
-                                  <li class="nav-item"><a class="nav-item-child nav-item-hover" href="services">Services</a></li>
-                                  <li class="nav-item"><a class="nav-item-child nav-item-hover" href="features">Features</a></li>
-                                  <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="contact">Contact</a></li>
-                                  <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq">FAQ</a></li>
-                                  <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/login">Login | Register</a></li> 
-                              </ul>
-                          </div>
-                      </div>
+                            <div class="collapse navbar-collapse nav-collapse">
+                                    <div class="menu-container">
+                                        <ul class="navbar-nav navbar-nav-right">
+                                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/">Home</a></li>
+                                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about">About</a></li>
+                                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="services">Services</a></li>
+                                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="features">Features</a></li>
+                                            <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="contact">Contact</a></li>
+                                            <li class="nav-item">
+                                                   <a class="nav-item-child nav-item-hover" href="/<%=b%>"><i class="icon-user"></i> <%=a%></a></li>
+                                             </ul>
+                                    </div>
+                                </div>
                     </div>
                     <!-- End Navbar Collapse -->
                 </div>
@@ -99,7 +99,7 @@
         <!--========== PARALLAX ==========-->
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/header.jpg">
             <div class="parallax-content container">
-                <h1 class="carousel-title">Contact Us</h1>
+                <strong><h1 class="carousel-title text-center" style="font-size:80px;font-weight: 300 ">Contact Us</h1></strong>
             </div>
         </div>
         <!--========== PARALLAX ==========-->
@@ -130,7 +130,6 @@
                                 <p>My
                                     <label for="your-name">name</label> is
                                     <input type="text" name="your-name" id="your-name" minlength="3" placeholder="(your name here)" required> and</p>
-                
                                 <p>my
                                     <label for="email">email address</label> is
                                     <input type="email" name="your-email" id="email" placeholder="(your email address)" required>

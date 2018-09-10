@@ -113,7 +113,7 @@ p {
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
-    color: #9A9A9A;
+    color: rgb(0, 0, 0);
     font-weight: 300;
     line-height: 1.5;
 }
@@ -2266,15 +2266,14 @@ fieldset[disabled] .btn-neutral.active {
 
 .card .category,
 .card label {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    color: #9A9A9A;
-    margin-bottom: 0px;
+    color: rgb(0, 0, 0);
 }
 
 .card .category i,
 .card label i {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .card label {
